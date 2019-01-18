@@ -58,10 +58,10 @@ inline void print_correct (const short &index)
 
 inline void print_error (int &correct, answer &ans)
 {
+	std::cout << "\n\nTests passed: " << correct << "\n";
 	switch (ans.error_type)
 	{
 		case 1:///difference
-			std::cout << "\n\nTests passed: " << correct << "\n";
 			std::cout << "Find difference at line: " << ans.line << "\n";
 			std::cout << "Correct answer: " << ans.correct << "\n";
 			std::cout << "Your answer: " << ans.wrong << "\n";
